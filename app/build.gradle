@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.su.myappconectiontwo"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    defaultConfig {
+        ndk {
+            moduleName "app" //so文件: lib+moduleName+.so
+            ldLibs "log", "z", "m"
+            // 设置支持的 SO 库构架
+            //abiFilters 'armeabi'// 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            abiFilters "armeabi", "armeabi-v7a", "x86" //cpu的类型
+        }
+    }
+    //设置引用目录
+    sourceSets {
+        main {
+            //jniLibs.srcDir 'libs'
+            jni.srcDirs "src/main/jni"
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'io.github.openfeign:feign-gson:9.5.0'
+}

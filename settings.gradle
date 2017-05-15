@@ -1,0 +1,1 @@
+include ':app', ':calljnitwo', ':ccalljava3so', ':mycalljni', ':mymeituxx'
