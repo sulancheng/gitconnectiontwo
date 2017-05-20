@@ -1,1 +1,2 @@
-include ':app', ':calljnitwo', ':ccalljava3so', ':mycalljni', ':mymeituxx'
+include ':app', ':calljnitwo', ':ccalljava3so', ':mycalljni', ':mymeituxx', ':mykotlintest'
+include ':payDemoActivity_20'

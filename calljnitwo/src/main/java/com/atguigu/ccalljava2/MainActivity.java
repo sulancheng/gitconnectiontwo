@@ -15,5 +15,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         jni = new JNI();
         jni.callbackSayHello();
+        HistoryJNI historyJNI = new HistoryJNI();
+        historyJNI.saynimei();
     }
 }
