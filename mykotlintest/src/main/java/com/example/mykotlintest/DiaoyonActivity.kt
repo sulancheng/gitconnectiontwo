@@ -2,6 +2,7 @@ package com.example.mykotlintest
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 
 /**
  * Created by sucheng
@@ -15,5 +16,9 @@ class DiaoyonActivity : Activity() {
         myutils.one(1, 3)
         myutils.print("nihao")
         Myutils.testtwo()
+        val myutilsjava = Myutilsjava()
+        val getcf = myutilsjava.getcf(4, 5)
+        Log.i("getcf","getcf = "+getcf);
+        Myutilsjava().daiyongkotlin()
     }
 }

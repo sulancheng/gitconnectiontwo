@@ -8,7 +8,7 @@ import android.util.Log
  */
 
 class Myutils {
-    fun one(a: Int, b: Int): Int {
+    fun one(a: Int, b: Int): Int?{
         return a + b
     }
 
