@@ -68,10 +68,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".xmlandhtml.XmlhtmlActivity"></activity>
+        <activity android:name=".xmlandhtml.XmlhtmlActivity" />
         <activity android:name=".xmlandhtml.JsCallJavaVideoActivity" />
         <activity android:name=".xmlandhtml.JsCallJavaCallPhoneActivity" />
-        <activity android:name=".aboutjni.AboutJniActivity"></activity>
+        <activity android:name=".aboutjni.AboutJniActivity" />
+        <activity android:name=".shouxieban.ShouXieActivity"></activity>
     </application>
 
 </manifest>

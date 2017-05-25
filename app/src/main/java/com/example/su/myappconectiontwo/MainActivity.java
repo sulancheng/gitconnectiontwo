@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.su.myappconectiontwo.aboutjni.AboutJniActivity;
+import com.example.su.myappconectiontwo.shouxieban.ShouXieActivity;
 
 public class MainActivity extends Activity {
     @Override
@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         tiaoz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, AboutJniActivity.class));
+                startActivity(new Intent(MainActivity.this, ShouXieActivity.class));
             }
         });
     }
