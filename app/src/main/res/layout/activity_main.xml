@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffc"
     tools:context="com.example.su.myappconectiontwo.MainActivity">
 
     <TextView
@@ -16,4 +17,13 @@
         android:id="@+id/tiaoz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/gv"
+        android:numColumns="3"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
 </LinearLayout>
