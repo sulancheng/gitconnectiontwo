@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.example.su.myappconectiontwo.shouxieban.ShouXieActivity;
-
 public class MainActivity extends Activity {
     private String[] iconName = { "通讯录", "日历", "照相机", "时钟", "游戏", "短信", "铃声",
             "设置", "语音", "天气", "浏览器", "视频" };
@@ -24,7 +22,7 @@ public class MainActivity extends Activity {
         tiaoz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ShouXieActivity.class));
+                startActivity(new Intent(MainActivity.this, EditActivity.class));
             }
         });
         GridView gridview = (GridView) findViewById(R.id.gv);

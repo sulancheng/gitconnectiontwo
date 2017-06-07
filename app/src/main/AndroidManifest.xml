@@ -72,7 +72,8 @@
         <activity android:name=".xmlandhtml.JsCallJavaVideoActivity" />
         <activity android:name=".xmlandhtml.JsCallJavaCallPhoneActivity" />
         <activity android:name=".aboutjni.AboutJniActivity" />
-        <activity android:name=".shouxieban.ShouXieActivity"></activity>
+        <activity android:name=".shouxieban.ShouXieActivity" />
+        <activity android:name=".EditActivity"></activity>
     </application>
 
 </manifest>
