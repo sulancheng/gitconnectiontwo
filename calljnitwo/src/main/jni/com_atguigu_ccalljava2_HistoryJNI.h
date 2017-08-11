@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT void JNICALL Java_com_atguigu_ccalljava2_HistoryJNI_saynimei
   (JNIEnv *, jobject);
 
+/*
+ * Class:     com_atguigu_ccalljava2_HistoryJNI
+ * Method:    saynimeitwo
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_atguigu_ccalljava2_HistoryJNI_saynimeitwo
+  (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif
